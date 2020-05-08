@@ -12,14 +12,12 @@
   "author": "Mike Bannister <mikebannister@gmail.com>",
   "main": "lib/index.js",
   "files": [
-    "lib/index.js"
+    "src/index.js"
   ],
   "license": "MIT",
   "scripts": {
-    "build": "rimraf lib && ./node_modules/.bin/babel src -d lib",
     "test": "ava --verbose src/test.js",
     "dev": "ava --verbose --watch src/test.js",
-    "prepublish": "yarn build",
     "lint": "standard",
     "pretest": "yarn lint"
   },
